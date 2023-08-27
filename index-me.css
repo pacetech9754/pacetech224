@@ -16,14 +16,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: yellow;
+    padding: 15px 10%;
+    background: rosybrown;
     display: flex;
     justify-content: space-between;
     align-items: center;  
     z-index: 100;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .logo {
@@ -35,7 +35,7 @@ body {
 
 .navbar a {
     font-size: 18px;
-    color: rgb(31, 206, 230);
+    color: rgb(19, 151, 168);
     text-decoration: none;
     font-weight: 700;
     margin-left: 35px;
@@ -44,7 +44,7 @@ body {
 
 .navbar a:hover,
 .navbar :active {
-    color: aqua;
+    color: rgb(255, 0, 140);
 }
 
 .home{
@@ -176,4 +176,104 @@ body {
 
 .home-sci a:hover::before{
     width: 100%;
+}
+
+.form{
+    content: "";
+    width: 318px;
+    height: 370px;
+    color:rgb(253, 151, 151);
+    background: linear-gradient(blue,rgb(238, 154, 154),green);
+    position: absolute;
+    top: 145px;
+    left: 998px;
+    border-radius: 25px;
+    padding: 55px;
+}
+
+.form h2{
+    width: 150px;
+    background-color: rgb(196, 228, 255);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px;
+    margin: 10px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.form input{
+    width: 195px;
+    height: 35px;
+    background: transparent;
+    color: rgb(51, 25, 25);
+    line-height: 2px;
+    margin-bottom: 5px;
+    padding: 15px;
+    border-bottom: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    letter-spacing: 1.5px;
+}
+
+.submit a {
+    position: relative;
+    display: inline-flex;
+    width: 195px;
+    height: 100%;
+    border: 2px solid;
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.1px;
+    background: none;
+    transition: 3s;
+    z-index: 1;
+    overflow:visible;
+}
+.submit a:hover::before {
+    color: rgb(208, 211, 64);
+    width: 100%;
+}
+
+.submit a:nth-child(1) {
+    color: rgb(74, 19, 204);
+    background: rosybrown;
+}
+
+.submit a::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #17774f;
+    transition: .3s;
+    width:0;
+    height: 100%;
+    z-index: -1;
+    cursor: pointer;
+}
+.link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    transition: 5s;
+}
+.link a:hover {
+    transition: .3s;
+    color: rgb(255, 0, 128);
+}
+
+.footer,.p{
+    margin: 0;
+    color: brown;
+    align-items: baseline;
+    display: block;
+    background: #ad6f12;
+    padding: 20px 0 40px;
 }
